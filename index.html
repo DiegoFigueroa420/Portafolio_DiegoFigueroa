@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Frontend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">PORTFOLIO</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Acerca</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="neon-lines"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hola, soy</span>
+                    <span class="hero-name">FRONTEND DEVELOPER</span>
+                </h1>
+                <p class="hero-subtitle">Creando experiencias digitales extraordinarias</p>
+                <div class="hero-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">Python</span>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Ver Proyectos</button>
+                    <button class="btn btn-secondary">Contactar</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-simulation">
+                    <div class="code-lines">
+                        <div class="code-line"><span class="keyword">const</span> developer = {</div>
+                        <div class="code-line">  <span class="property">name</span>: <span class="string">'Frontend Dev'</span>,</div>
+                        <div class="code-line">  <span class="property">skills</span>: [<span class="string">'JS'</span>, <span class="string">'CSS'</span>, <span class="string">'HTML'</span>],</div>
+                        <div class="code-line">  <span class="property">passion</span>: <span class="string">'Creating Amazing UIs'</span></div>
+                        <div class="code-line">};</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Acerca de Mí</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        Soy un desarrollador frontend apasionado por crear experiencias digitales únicas y funcionales. 
+                        Con sólidos conocimientos en JavaScript, HTML y CSS, me especializo en construir interfaces 
+                        de usuario modernas y responsivas.
+                    </p>
+                    <p class="about-paragraph">
+                        Mi enfoque se centra en la calidad del código, la accesibilidad y la experiencia del usuario. 
+                        También tengo experiencia con Python, lo que me permite entender mejor la integración 
+                        frontend-backend.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Proyectos Completados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Satisfacción del Cliente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="profile-photo">
+                            <img src="https://via.placeholder.com/300x300/6366f1/ffffff?text=Tu+Foto" alt="Mi foto de perfil" class="profile-img">
+                        </div>
+                        <div class="image-frame"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3 class="skill-title">JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="90"></div>
+                    </div>
+                    <p class="skill-description">ES6+, DOM Manipulation, Async/Await, APIs</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-title">HTML5</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="95"></div>
+                    </div>
+                    <p class="skill-description">Semantic HTML, Accessibility, SEO</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-title">CSS3</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="88"></div>
+                    </div>
+                    <p class="skill-description">Flexbox, Grid, Animations, Responsive Design</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="skill-title">Python</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="70"></div>
+                    </div>
+                    <p class="skill-description">Flask, Django, Data Processing</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="skill-title">Herramientas</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="85"></div>
+                    </div>
+                    <p class="skill-description">Git, VS Code, Chrome DevTools</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="skill-title">Responsive Design</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-width="92"></div>
+                    </div>
+                    <p class="skill-description">Mobile-first, Cross-browser compatibility</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">
+                            Plataforma de comercio electrónico completa con carrito de compras, 
+                            sistema de pagos y panel de administración.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">HTML5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dashboard Analytics</h3>
+                        <p class="project-description">
+                            Dashboard interactivo para visualización de datos con gráficos en tiempo real 
+                            y filtros avanzados.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            Aplicación de gestión de tareas con drag & drop, 
+                            notificaciones y sincronización en tiempo real.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS Grid</span>
+                            <span class="tech-tag">Local Storage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Conecta Conmigo</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">¿Listo para trabajar juntos?</h3>
+                    <p class="contact-description">
+                        Si tienes un proyecto en mente o quieres colaborar, 
+                        no dudes en contactarme a través de mis redes sociales. 
+                        Estoy siempre abierto a nuevas oportunidades.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>developer@email.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ciudad, País</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-networks">
+                    <h3 class="social-title">Sígueme en</h3>
+                    <div class="social-grid">
+                        <a href="#" class="social-card">
+                            <div class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="social-info">
+                                <h4>GitHub</h4>
+                                <p>@tu-usuario</p>
+                            </div>
+                        </a>
+                        <a href="#" class="social-card">
+                            <div class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="social-info">
+                                <h4>LinkedIn</h4>
+                                <p>@tu-perfil</p>
+                            </div>
+                        </a>
+                        <a href="#" class="social-card">
+                            <div class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="social-info">
+                                <h4>Twitter</h4>
+                                <p>@tu-twitter</p>
+                            </div>
+                        </a>
+                        <a href="#" class="social-card">
+                            <div class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="social-info">
+                                <h4>Instagram</h4>
+                                <p>@tu-instagram</p>
+                            </div>
+                        </a>
+                        <a href="#" class="social-card">
+                            <div class="social-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="social-info">
+                                <h4>YouTube</h4>
+                                <p>@tu-canal</p>
+                            </div>
+                        </a>
+                        <a href="#" class="social-card">
+                            <div class="social-icon">
+                                <i class="fab fa-discord"></i>
+                            </div>
+                            <div class="social-info">
+                                <h4>Discord</h4>
+                                <p>tu-usuario#1234</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Frontend Developer Portfolio. Todos los derechos reservados.</p>
+                <p>Desarrollado con ❤️ usando HTML, CSS y JavaScript vanilla</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
